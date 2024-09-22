@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ContactForm from './ContactForm'; 
+import NextForm from './NextForm';
+import './index.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-md-4">
+              <Link to="/contact" className="box contact">
+                <h3>Normal Form</h3>
+              </Link>
+            </div>
+            <div className="col-md-4">
+              <Link to="/next" className="box next">
+                <h3>Next Form</h3>
+              </Link>
+            </div>
+          </div>
+
+          <Routes>
+            <Route path="/contact" element={<ContactForm />} />
+            <Route path="/next" element={<NextForm />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 

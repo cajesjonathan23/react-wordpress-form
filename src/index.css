@@ -1,13 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  margin: 0; 
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #faf8f8 !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+/* Your other styles... */
+.phoneNumber {
+  width: 100% !important;
+}
+.custom-input{
+  height: 55px !important;
+  
+}
+
+.form-select{
+  height: 55px !important;
+}
+.form-control {
+  border: 1px solid #ced4da; /* Border color (default Bootstrap) */
+  border-radius: 0.25rem; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(136, 7, 140, 0.1) !important; /* Default shadow */
+  transition: box-shadow 0.3s ease; /* Smooth transition on focus */
+}
+
+.custom-checkbox {
+  width: 25px !important;  /* Adjust width */
+  height: 25px !important; /* Adjust height */
+  cursor: pointer !important; /* Change cursor on hover */
+}
+
+/* Optionally, style the label for better alignment */
+.form-check-label {
+  margin-left: 10px; /* Adjust space between checkbox and label */
+  font-size: 1rem; /* Adjust font size */
+}
+
+
+/* Keyframes for wave-like effect */
+@keyframes waveEffect {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  50% {
+    transform: scale(1.05) translateX(10px); /* Slight zoom and wave to the right */
+  }
+  100% {
+    transform: scale(1) translateX(0); /* Back to normal */
+  }
+}
+
+.form-control:focus {
+  box-shadow: 0 8px 16px rgba(121, 10, 113, 0.2) !important; /* Shadow on focus */
+  border-color: #e635da !important; /* Change border color on focus */
+  transform: scale(1.05); /* Slight zoom effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+  animation: waveEffect 0.4s ease-in-out forwards; /* Trigger wave animation */
+}
+
+
+.custom-submit-btn {
+  background: linear-gradient(90deg, violet, blue); /* Gradient from violet to blue */
+  color: white !important; /* Ensure text is readable */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Optional: Rounded corners */
+  transition: background 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.bg-dark {
+  background-color: #343a40 !important; /* Bootstrap's dark color */
+}
+
+.text-light {
+  color: #f8f9fa !important; /* Bootstrap's light color */
+}
+
+.bg-light {
+  background-color: #ffffff !important;
+}
+
+.text-dark {
+  color: #212529 !important; /* Bootstrap's dark color */
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust height as needed */
+  width: 300px;  /* Adjust width as needed */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.box:hover {
+  opacity: 0.8; /* Slight opacity change on hover */
+
+}
+
+.box.contact {
+  background-color: violet; /* Orange background for Contact Form */
+  color: white;
+}
+
+.box.next {
+  background-color: #007bff; /* Blue background for Next Form */
+  color: white;
 }
