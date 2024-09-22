@@ -102,6 +102,7 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-decoration: none;
+  text-align: center;
 }
 
 .box:hover {
@@ -116,5 +117,10 @@ body {
 
 .box.next {
   background-color: #007bff; /* Blue background for Next Form */
+  color: white;
+}
+
+.box.multi {
+  background-color: #ea00ff; /* Blue background for Next Form */
   color: white;
 }

@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ContactForm from './ContactForm'; 
 import NextForm from './NextForm';
 import './index.css';
+import MultiForm from './MultiForm';
 
 function App() {
   return (
@@ -21,11 +22,17 @@ function App() {
                 <h3>Next Form</h3>
               </Link>
             </div>
+            <div className="col-md-4">
+              <Link to="/multi" className="box multi">
+                <h3>Multi Pages Next Form</h3>
+              </Link>
+            </div>
           </div>
 
           <Routes>
             <Route path="/contact" element={<ContactForm />} />
             <Route path="/next" element={<NextForm />} />
+            <Route path="/multi" element={<MultiForm />} />
           </Routes>
         </div>
       </div>

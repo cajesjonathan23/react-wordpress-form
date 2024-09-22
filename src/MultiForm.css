@@ -1,0 +1,68 @@
+/* Success Modal Overlay */
+.success-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+  }
+  .custom{
+    height: 50px;
+  }
+  /* Success Card Styling */
+  .success-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    animation-duration: 0.5s;
+  }
+  
+  .step-indicator {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .step-item {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #666;
+    border: 2px solid #e0e0e0;
+    position: relative;
+    z-index: 1; /* Ensures step circle stays above the line */
+  }
+  
+  .step-item.completed {
+    background-color: #28a745; /* Green for completed */
+    color: white;
+    border-color: #28a745;
+  }
+  
+  .step-line {
+    flex-grow: 1; /* Allows the line to stretch between steps */
+    height: 2px;
+    background-color: #e0e0e0;
+    position: relative;
+    top: -8px; /* Aligns the line vertically with the steps */
+  }
+  
+  .step-line.completed {
+    background-color: #28a745; /* Green for completed */
+  }
+  
+  
+  /* Add animation styles from Animate.css */
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+  
