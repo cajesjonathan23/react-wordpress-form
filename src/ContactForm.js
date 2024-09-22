@@ -247,7 +247,7 @@ const ContactForm = () => {
               {/* reCAPTCHA */}
               <div className="col-md-12 mb-3">
                 <ReCAPTCHA
-                  sitekey="6Lf5IEsqAAAAAGTB9UPLVHWt5eZ54ZdP2jUn7Df9" // Replace with your actual reCAPTCHA site key
+                  sitekey="6Ld2mUsqAAAAABiOx-PanuqPhAaUIcH4JixMohpG" // Replace with your actual reCAPTCHA site key
                   onChange={handleCaptcha}
                 />
                 {errors.captcha && <div className="text-danger">{errors.captcha}</div>}
